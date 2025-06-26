@@ -9,4 +9,4 @@ TARGET=x86_64-kernel
 
 $(dirname $0)/build.sh
 
-qemu-system-x86_64 -drive format=raw,file=target/$TARGET/debug/bootimage-walros-kernel.bin
+qemu-system-x86_64 -drive format=raw,file=target/$TARGET/debug/bootimage-walros-kernel.bin -serial stdio
